@@ -1,0 +1,58 @@
+.productsList__wrapper {
+  width: 100%;
+  /* height: 200px; */
+  /* background-color: rgb(241, 158, 158); */
+  margin-bottom: 70px;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.currentDate__wrapper {
+  background-color: #fff;
+  padding: 40px 0 60px;
+  width: 100%;
+}
+
+/* @media (max-width: 767px){
+  .page__wrapper {
+   
+  
+    min-height: 100vh;
+  }
+} */
+
+@media (min-width: 768px) {
+  .page__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .productsList__wrapper {
+    order: 1;
+    margin-bottom: 0;
+  }
+  .diaryItems__wrapper {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+  .currentDate__wrapper {
+    /* padding: 100px 0 60px; */
+    padding: 100px 0 0;
+  }
+}
+@media (min-width: 1280px) {
+  .page__wrapper {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100vh;
+  }
+  .currentDate__wrapper {
+    padding: 292px 30px 60px 115px;
+  }
+
+  /* .diaryItems__wrapper {
+    padding-bottom: 100px;
+  } */
+}
